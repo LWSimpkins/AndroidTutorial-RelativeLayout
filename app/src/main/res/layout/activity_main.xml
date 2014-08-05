@@ -1,0 +1,82 @@
+<!--
+- Can't use layout weight or layout gravity in a relative layout.
+- If a relative layout isn't the root and is nested in a different type of layout,
+  it can have a layout weight
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25c">
+
+    <TextView
+        android:id="@+id/logoSpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/logo"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/logoSpot"
+        android:text="@string/username"
+        android:padding="2dp"
+        style="@style/whiteText"/>
+    <TextView
+        android:id="@+id/usernameIn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/username"
+        style="@style/whiteInput"/>
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/usernameIn"
+        android:text="@string/password"
+        android:padding="2dp"
+        style="@style/whiteText"/>
+    <TextView
+        android:id="@+id/passwordIn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/password"
+        android:inputType="textPassword"
+        style="@style/whiteInput"/>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/passwordIn"
+        android:text="@string/save"
+        android:checked="true"
+        android:padding="2dp"
+        style="@style/whiteText"/>
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/signup"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        style="@style/whiteText"/>
+
+
+</RelativeLayout>
+
+    <!-- Input type to specify it's a password. Will mask characters  -->

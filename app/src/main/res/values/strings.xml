@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RelativeLayout_FB</string>
+    <string name="action_settings">Settings</string>
+    <string name="logo">Logo Spot</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="save">Save Login</string>
+    <string name="signup">Need an account? \n Sign up</string>
+
+
+</resources>
